@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Textarea文字数カウンター",
+    "version": "1.0",
+    "description": "ウェブページ上のtextareaに現在の文字数を表示します。",
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
