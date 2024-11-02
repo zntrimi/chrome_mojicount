@@ -1,9 +1,16 @@
 {
     "manifest_version": 3,
     "name": "Textarea文字数カウンター",
-    "version": "1.0",
-    "description": "ウェブページ上のtextareaに現在の文字数を表示します。",
-    "permissions": [],
+    "version": "2.0",
+    "description": "ウェブページ上の入力欄に現在の文字数を表示します。",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+      "default_title": "文字数カウンターをオン/オフ"
+    },
+    "options_page": "options.html",
+    "background": {
+      "service_worker": "background.js"
+    },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],

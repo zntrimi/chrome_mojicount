@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>文字数カウンター設定</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 6px 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>文字数カウンター設定</h1>
+  <label>
+    <input type="checkbox" id="includeInputs">
+    input要素（type="text"）にも文字数を表示する
+  </label>
+  <label>
+    除外するサイトのURL（カンマ区切りで入力）：
+    <input type="text" id="excludedSites" placeholder="例: example.com, sample.org">
+  </label>
+  <button id="saveButton">保存</button>
+  <p id="status"></p>
+
+  <script src="options.js"></script>
+</body>
+</html>
