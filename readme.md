@@ -23,9 +23,14 @@ This Chrome extension displays the character count in `textarea` and `input[type
 ## インストール方法 (Installation)
 
 1. このリポジトリをクローンまたはダウンロードします。
+
+![Extension Screenshot](howtodownload.png)
+
+
 2. Chromeの拡張機能管理ページ（`chrome://extensions/`）を開きます。
 3. 右上の「デベロッパーモード」をオンにします。
 4. 「パッケージ化されていない拡張機能を読み込む」をクリックし、ダウンロードしたフォルダを選択します。
+
 
 1. Clone or download this repository.
 2. Open the Chrome extensions management page (`chrome://extensions/`).
